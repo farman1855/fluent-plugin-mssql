@@ -3,10 +3,10 @@ lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
-  spec.name          = "fluent-plugin-mssql"
+  spec.name          = "fluent-plugin-mssql3"
   spec.version       = "0.0.1"
-  spec.authors       = ["Hidemasa Togashi"]
-  spec.email         = ["togachiro@gmail.com"]
+  spec.authors       = ["Farman Ali"]
+  spec.email         = ["farman.bsse1855@gmail.com"]
   spec.summary       = %q{Fluentd plugin to insert into Microsoft SQL Server.}
   spec.description   = %q{Fluentd plugin to insert into Microsoft SQL Server.}
   spec.homepage      = "http://github.com/htgc/fluent-plugin-mssql/fork"
