@@ -1,4 +1,4 @@
-# Fluent::Plugin::Mssql
+# Fluent::Plugin::Mssql3
 
 Fluentd plugin to insert into Microsoft SQL Server.
 
@@ -13,7 +13,7 @@ You should install and setup following packages;
 
 Add this line to your application's Gemfile:
 
-    gem 'fluent-plugin-mssql'
+    gem 'fluent-plugin-mssql3'
 
 And then execute:
 
@@ -21,14 +21,15 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install fluent-plugin-mssql
+    $ gem install fluent-plugin-mssql3
 
 ## Usage
 
 ```
 <match insert.into.mssql>
     type mssql
-    odbc_label <OdbcLabel>
+    host <hostname>
+    database <database name>
     username <username>
     password <password>
     key_names status,bytes,vhost,path,rhost,agent,referer
